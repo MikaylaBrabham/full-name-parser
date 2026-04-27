@@ -9,7 +9,7 @@ public class FullNameParser {
 
         // call the getName method
         String fullNamePar = getName(scanner);
-        System.out.println("Full Name:" + fullNamePar);
+        System.out.println("Full Name: " + fullNamePar);
 
     }
 
@@ -23,19 +23,19 @@ public class FullNameParser {
 
         //print the first and middle name and last name
         String fullNamePar = "Full Name: ";
-        //System.out.println("Full Name: " + firstName + " ");
         if (fullName.length == 3) {
             String firstName = fullName[0];
             String middleName = fullName[1];
             String lastName = fullName[2];
+            //fulls ente
 
-            fullNamePar = fullNamePar + firstName + " " + middleName + " " + lastName;
+            fullNamePar = firstName + " " + middleName + " " + lastName;
         }
         if (fullName.length == 2) {
             String firstName = fullName[0];
             String noMiddle = "(none)" + " ";
             String lastName = fullName[1];
-            fullNamePar = fullNamePar + firstName + " " + noMiddle + " " + lastName;
+            fullNamePar = firstName + " " + noMiddle + " " + lastName;
         }
         return fullNamePar;
     }
