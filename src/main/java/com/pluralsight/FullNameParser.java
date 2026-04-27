@@ -9,15 +9,10 @@ public class FullNameParser {
 
     }
     public static String getName(Scanner scanner) {
-        // get the users first name and get variable
-        System.out.println("Enter your first name: ");
-        String firstName = scanner.nextLine().trim();
+        // ask the user for their name
+        System.out.println(" Please enter your name:");
+        String fullName = scanner.nextLine().trim();
 
-        // get the users middle name
-        System.out.println("Enter your middle name: ");
-        String middleName = scanner.nextLine().trim();
+    }
 
-        // get the users last name
-        System.out.println("Enter your last name: ");
-        String lastName = scanner.nextLine().trim();
 }
